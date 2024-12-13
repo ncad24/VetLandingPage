@@ -1,5 +1,4 @@
 import {Component, HostListener} from '@angular/core';
-import {NavbarComponent} from '../navbar/navbar.component';
 import {MatButton} from '@angular/material/button';
 import {MatMenu, MatMenuItem, MatMenuTrigger} from '@angular/material/menu';
 import {MatToolbar} from '@angular/material/toolbar';
@@ -7,7 +6,6 @@ import {MatToolbar} from '@angular/material/toolbar';
 @Component({
   selector: 'app-landing-one',
   imports: [
-    NavbarComponent,
     MatButton,
     MatMenu,
     MatMenuItem,
