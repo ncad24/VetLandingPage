@@ -1,12 +1,73 @@
+*{
+  font-family: 'Poppins', sans-serif;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0 1rem;
-  background-color: transparent;
-  
+  align-items: center;
+  padding: 0 32px;
+  background-color: #d3c4b3;
+  height: 70px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+  background-color: #a3988c; /* New background color when scrolled */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
 }
 
 .logo {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.8rem;
   font-weight: bold;
+  color: black;
+}
+.logo-image {
+  width: auto;
+  height: 40px;
+  object-fit: contain;
+}
+.spacer {
+  flex: 1;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  color: white;
+}
+
+.nav-button {
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+  text-transform: capitalize;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-button:hover {
+  color: #575048;
+  background-color: white;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-item {
+  font-size: 0.9rem;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.mat-menu-content {
+  background-color: #f4e8da;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }

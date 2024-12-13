@@ -4,6 +4,6 @@ import {LandingTwoComponent} from './component/landing-two/landing-two.component
 
 export const routes: Routes = [
   {path:'', component: LandingOneComponent},
-  {path:'/landingOne', component: LandingOneComponent},
-  {path:'/landingTwo', component: LandingTwoComponent},
+  {path:'landingOne', component: LandingOneComponent},
+  {path:'landingTwo', component: LandingTwoComponent},
 ];
