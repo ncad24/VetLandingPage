@@ -10,16 +10,38 @@
   top:0;
   position: fixed;
   padding: 0 32px;
-  background-color: #d3c4b3;
+  background-color: #f5f3f0;
   height: 70px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
+}
+.nav-links .nav-button{
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+}
+.nav-links .nav-button:hover{
+  background-color: #7d664f;
+  color: #f5f3f0;
+  cursor: pointer;
 }
 
 .navbar.scrolled {
-  background-color: #a3988c; /* New background color when scrolled */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  background-color: #7d664f;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.5s ease, box-shadow 0.5s ease;
 }
-
+.navbar.scrolled .nav-links .nav-button{
+  background-color: transparent;
+  color: #f5f3f0;
+}
+.navbar.scrolled .nav-links .nav-button:hover{
+  background-color: #f5f3f0;
+  color: #7d664f;
+}
+.navbar.scrolled .logo{
+  color: #f5f3f0;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -27,11 +49,13 @@
   font-size: 1.8rem;
   font-weight: bold;
   color: black;
+  cursor: pointer;
 }
 .logo-image {
   width: auto;
-  height: 40px;
+  height: 25px;
   object-fit: contain;
+  cursor: pointer;
 }
 .spacer {
   flex: 1;
@@ -81,7 +105,7 @@
 .wave-container {
   position: relative;
   height: 100vh;
-  background-color: #d3c4b3; /* Top background color */
+  background-color: #fefefd;
   text-align: center;
   padding: 50px 20px;
 }

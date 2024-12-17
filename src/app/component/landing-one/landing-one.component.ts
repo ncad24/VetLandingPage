@@ -22,12 +22,21 @@ export class LandingOneComponent {
   @HostListener('window:scroll', [])
   onWindowScroll(): void {
     const navbar = document.getElementById('navbar');
+    const logoImage = document.querySelector('.logo-image') as HTMLImageElement;
+
     if (navbar) {
       if (window.scrollY > 50) {
         navbar.classList.add('scrolled');
+        if (logoImage) {
+          logoImage.src = './dogIconScrolled.png'; // Cambia a la imagen deseada
+        }
       } else {
         navbar.classList.remove('scrolled');
+        if (logoImage) {
+          logoImage.src = './dogIcon.png'; // Imagen original
+        }
       }
     }
   }
+
 }
